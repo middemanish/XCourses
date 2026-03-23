@@ -1,0 +1,28 @@
+.text{
+    color:gray;
+}
+.login{
+    height:100vh;
+}
+.carousel-text,.carousel-label{
+    color:black;
+    background-color: white;
+}
+
+.card{
+    background-color: white;
+}
+
+.disabled-link {
+  color: black; 
+  text-decoration: none; 
+}
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}

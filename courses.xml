@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="courses.xsd">
+
+    <course>
+        <title>Machine Learning Specialization</title>
+        <instructor>Andrew Ng</instructor>
+        <price currency="INR">569</price>
+        <provider>Coursera</provider>
+        <duration>8-10 weeks</duration>
+    </course>
+
+    <course>
+        <title>CS50: Introduction to Computer Science</title>
+        <instructor>David J. Malan</instructor>
+        <price currency="INR">0</price>
+        <provider>Harvard</provider>
+        <duration>10-12 weeks</duration>
+    </course>
+
+    <course>
+        <title>Algorithms Specialization</title>
+        <instructor>Tim Roughgarden</instructor>
+        <price currency="INR">399</price>
+        <provider>Stanford</provider>
+        <duration>6-8 weeks</duration>
+    </course>
+
+    <course>
+        <title>Deep Learning Specialization</title>
+        <instructor>Andrew Ng</instructor>
+        <price currency="INR">699</price>
+        <provider>Coursera</provider>
+        <duration>3-6 months</duration>
+    </course>
+
+    <course>
+        <title>Google Data Analytics Professional Certificate</title>
+        <instructor>Google</instructor>
+        <price currency="INR">299</price>
+        <provider>Google</provider>
+        <duration>6 months</duration>
+    </course>
+
+    <course>
+        <title>Full-Stack Web Development with React</title>
+        <instructor>Hong Kong University of Science and Technology</instructor>
+        <price currency="INR">349</price>
+        <provider>Coursera</provider>
+        <duration>8-10 weeks</duration>
+    </course>
+
+    <course>
+        <title>Python for Everybody</title>
+        <instructor>Charles Severance</instructor>
+        <price currency="INR">199</price>
+        <provider>Coursera</provider>
+        <duration>6-8 weeks</duration>
+    </course>
+
+    <course>
+        <title>Introduction to Artificial Intelligence (AI)</title>
+        <instructor>IBM</instructor>
+        <price currency="INR">249</price>
+        <provider>IBM</provider>
+        <duration>4-6 weeks</duration>
+    </course>
+
+    <course>
+        <title>Operating Systems and You</title>
+        <instructor>Google</instructor>
+        <price currency="INR">199</price>
+        <provider>Google</provider>
+        <duration>5-6 weeks</duration>
+    </course>
+
+</courses>

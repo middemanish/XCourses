@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>XCourses</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.card{
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body class="bg-light">
+
+<header class="p-3 text-bg-dark"> 
+<div class="container">
+<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> 
+
+<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+<li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+<li><a href="courses.html" class="nav-link px-2 text-white">Courses</a></li> 
+<li><a href="faq.html" class="nav-link px-2 text-white">FAQs</a></li>
+<li><a href="about.html" class="nav-link px-2 text-white">About</a></li> 
+</ul> 
+
+<div class="text-end"> 
+<a href="signin.html" class="btn btn-outline-light me-2">Login</a> 
+<a href="signup.html" class="btn btn-warning">Sign-up</a>
+</div> 
+
+</div> 
+</div> 
+</header>
+
+<div class="container py-5">
+
+<h1 class="text-center mb-5">Contact Us</h1>
+
+<div class="row">
+
+<div class="col-md-5 mb-4">
+<div class="card shadow h-100">
+<div class="card-body">
+
+<h4>Contact Information</h4>
+<hr>
+
+<p><b>Address:</b><br>
+XCourses Headquarters,<br>
+Hyderabad, India</p>
+
+<p><b>Email:</b><br>
+support@xcourses.com</p>
+
+<p><b>Phone:</b><br>
++91 9876543210</p>
+
+</div>
+</div>
+</div>
+
+<div class="col-md-7">
+<div class="card shadow">
+<div class="card-body">
+
+<h4>Send an Inquiry</h4>
+<hr>
+
+<form id="contactForm">
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" id="name" class="form-control">
+<div class="text-danger small" id="nameError"></div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" id="email" class="form-control">
+<div class="text-danger small" id="emailError"></div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone</label>
+<input type="text" id="phone" class="form-control">
+<div class="text-danger small" id="phoneError"></div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea id="message" class="form-control" rows="4"></textarea>
+<div class="text-danger small" id="messageError"></div>
+</div>
+
+<button type="submit" class="btn btn-primary w-100">Submit</button>
+
+</form>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<div class="col-md-4 d-flex align-items-center">
+<span class="text-body-secondary">© 2026 XCourses, Inc</span>
+</div>
+
+<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+<li class="ms-3"><a class="text-body-secondary" href="#">Instagram</a></li>
+<li class="ms-3"><a class="text-body-secondary" href="#">Facebook</a></li>
+</ul>
+</footer>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let phoneError = document.getElementById("phoneError");
+    let messageError = document.getElementById("messageError");
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    messageError.textContent = "";
+
+    let isValid = true;
+
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    let phonePattern = /^[0-9]{10}$/;
+
+    if(name === ""){
+        nameError.textContent = "Name is required";
+        isValid = false;
+    }
+
+    if(email === ""){
+        emailError.textContent = "Email is required";
+        isValid = false;
+    } else if(!email.match(emailPattern)){
+        emailError.textContent = "Enter valid email";
+        isValid = false;
+    }
+
+    if(phone === ""){
+        phoneError.textContent = "Phone is required";
+        isValid = false;
+    } else if(!phone.match(phonePattern)){
+        phoneError.textContent = "Enter valid 10-digit phone number";
+        isValid = false;
+    }
+
+    if(message === ""){
+        messageError.textContent = "Message cannot be empty";
+        isValid = false;
+    }
+
+    if(isValid){
+        alert("Message submitted successfully!");
+        document.getElementById("contactForm").reset();
+    }
+
+});
+</script>
+
+</body>
+</html>
