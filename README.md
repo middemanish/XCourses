@@ -31,7 +31,7 @@ XCourses is a modern course discovery platform that helps users explore and comp
 
 ## 🌐 Live Demo
 
-👉 https://YOUR_USERNAME.github.io/xcourses/
+👉 https://middemanish.github.io/xcourses/
 
 ---
 
